@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Formulário</h1>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nasc">Data de Nascimento:</label><br>
+                        <input type="date" id="nasc" name="nasc" ><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="tel" name="tel"><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="curso">Curso:</label>
+                        <select id="curso" name="curso">
+                            <option value="ADS">ADS</option>
+                            <option value="CD">Ciência de Dados</option>
+                            <option value="EC">E-commerce</option>
+                            <option value="GCD">Gestão de Comunicação</option>
+                            <option value="GTI">Gestão de TI</option>
+                            <option value="MKD">Marketing Digital</option> 
+                            <option value="TSI">Sistema de Informação</option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>     
+                    <td>
+                        <label for="semestre">Semestre:</label>
+                        <label for="primeiro">1º</label>
+                        <input type="radio" id="primeiro" name="semestre" value="1º">
+                        <label for="segundo">2º</label>
+                        <input type="radio" id="segundo" name="semestre" value="2º">
+                        <label for="terceiro">3º</label>
+                        <input type="radio" id="terceiro" name="semestre" value="3º">
+                        <label for="quarto">4º</label>
+                        <input type="radio" id="quarto" name="semestre" value="4º">
+                        <label for="quinto">5º</label>
+                        <input type="radio" id="quinto" name="semestre" value="5º">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <fieldset>
+          <table>
+              <tr>
+                  <label for="Trabalha">Trabalha?</label>
+                  <input type="checkbox" id="Trabalha" name="Trabalha"><br>
+                  <label for="Local">Local de Trabalho:</label>
+                  <input type="text" id="Local" name="Local"><br>                          
+                  <label for="exp">Descreva sua experiência:</label><br>
+                  <textarea name="message" rows="05" cols="50"></textarea>                            
+              </tr>
+          </table>
+      </fieldset>
+       
+    <button type="button" onclick="alert('Formulario Preenchido')">Gravar</button>
+    <input type="reset" value="Limpar">
+    <br> <a href="index.html">Inicio</a>
+</form>
+
+</body>
+</html>
